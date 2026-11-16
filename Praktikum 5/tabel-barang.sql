@@ -1,0 +1,10 @@
+USE db_kuliah;
+
+CREATE TABLE IF NOT EXISTS barang (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama_barang VARCHAR(100) NOT NULL,
+    harga INT NOT NULL,
+    jumlah INT NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE barang ADD stok INT NOT NULL;
